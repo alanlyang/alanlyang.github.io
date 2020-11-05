@@ -1,6 +1,6 @@
-# Hux blog 模板
+# blog 模板
 
-### [我的博客在这里 &rarr;](http://huxpro.github.io)
+### [我的博客在这里 &rarr;](http://yanglihust.github.io)
 
 
 ### 关于收到"Page Build Warning"的email
@@ -18,15 +18,6 @@
 参考文档：[using jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages/) & [Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/)
 
 
-## 关于模板(beta)
-
-我的博客仓库——`huxpro.github.io`，是经常修改的，而且还会有人乱提交代码，因此给大家做了一个稳定版的模板。大家可以直接fork模板——`huxblog-boilerplate`,要改的地方我都说明了。或者可以直接下载zip到本地自己去修改。
-
-```
-$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
-```
-
-**[在这里预览模板 &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
 
 ## 各版本特性
 
@@ -43,7 +34,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 ## 支持
 
 * 你可以自由的fork。如果你能将主题作者和 github 的地址保留在你的页面底部，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在`huxpro.github.io`这个repository点个赞——右上角**star**一下。
+
 
 ## 说明文档
 
