@@ -10,6 +10,7 @@ layout: default
 {% include intro-header.html type='post' %}
 
 <!-- Post Content -->
+<!-- 布局统一使用的Bootstrap进行的布局 -->
 <article>
     <div class="container">
         <div class="row">
@@ -21,6 +22,7 @@ layout: default
                 post-container">
 
                 <!-- Multi-Lingual -->
+                <!-- 多语言界面增加一个语言切换框 -->
                 {% if page.multilingual %}
                     {% include multilingual-sel.html %}
                 {% endif %}
@@ -31,6 +33,7 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
+                        <!-- data-toggle用于修改链接的默认行为 -->
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         Previous<br>
                         <span>{{page.previous.title}}</span>
@@ -48,6 +51,7 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
+                <!-- 引入外挂评论功能 -->
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
@@ -64,6 +68,7 @@ layout: default
             </div>  
 
     <!-- Side Catalog Container -->
+    <!-- 侧边显示标签 -->
         {% unless page.no-catalog %}
             <div class="
                 col-lg-2 col-lg-offset-0

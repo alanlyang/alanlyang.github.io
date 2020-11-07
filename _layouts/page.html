@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-
+<!-- page类型的页面布局结构 -->
 <!-- Page Header -->
+<!-- 引入头部信息 -->
 {% include intro-header.html type='page' %}
 
 <!-- Main Content -->
+<!-- Page类型布局的结构 -->
 <div class="container">
 	<div class="row">
         {% if site.sidebar == false %}
@@ -15,6 +17,7 @@ layout: default
                 {{ content }}
             </div>
     <!-- Sidebar Container -->
+    <!-- sidebar主要包含tags和Friends信息 -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
@@ -51,6 +54,8 @@ layout: default
                 {% include featured-tags.html %}
 
                 <!-- Short About -->
+                <!--  侧边个人简介信息 -->
+                <!-- TODO 可以增加目录结构在这里 -->
                 {% include short-about.html %}
 
                 <!-- Friends Blog -->
@@ -60,6 +65,7 @@ layout: default
 	</div>
 </div>
 
+<!-- 支持公式编辑时的页面组件 -->
 {% if site.page-mathjax %}
 <!-- Add support for Mathjax by Voleking-->
 <!-- If you want to see formulars well in post preview, Maybe you should add this.-->

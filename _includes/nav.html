@@ -1,5 +1,7 @@
 <!-- Navigation -->
+<!-- 导航模块的页面布局 -->
 {% if page.nav-style == "invert" or page.header-style == "text" %}
+<!-- 响应式导航栏布局 -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
     {% else %}
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -52,7 +54,7 @@
         var $navbar = document.querySelector('#huxblog_navbar');
         var $collapse = document.querySelector('.navbar-collapse');
 
-        var __HuxNav__ = {
+        var __AlanNav__ = {
             close: function () {
                 $navbar.className = " ";
                 // wait until animation end.
@@ -72,9 +74,9 @@
         // Bind Event
         $toggle.addEventListener('click', function (e) {
             if ($navbar.className.indexOf('in') > 0) {
-                __HuxNav__.close()
+                __AlanNav__.close()
             } else {
-                __HuxNav__.open()
+                __AlanNav__.open()
             }
         })
 
@@ -92,6 +94,6 @@
         document.addEventListener('click', function (e) {
             if (e.target == $toggle) return;
             if (e.target.className == 'icon-bar') return;
-            __HuxNav__.close();
+            __AlanNav__.close();
         })
     </script>

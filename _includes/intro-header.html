@@ -1,9 +1,11 @@
+<!-- 这里是注释 -->
 {% comment %}
     @param {string} type - 'page' | 'post' | 'keynote'
     @param {boolean} short
 {% endcomment %}
 
 {% if include.type == 'post' %}
+<!-- post类型的样式表 -->
 <style type="text/css">
     header.intro-header{
         position: relative;
@@ -20,6 +22,7 @@
     }
     {% endif %}
 </style>
+<!-- text类型的样式表 -->
 {% if page.header-style == 'text' %}
 <header class="intro-header style-text" >
 {% else %}
@@ -36,6 +39,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
+                        <!-- 设置tag的超链接 -->
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/archive/?tag={{ tag | url_encode }}" title="{{ tag }}">{{ tag }}</a>
                         {% endfor %}
@@ -51,6 +55,7 @@
 </header>
 {% endif %}
 
+<!-- keynote文件类型的样式表 -->
 {% if include.type == 'keynote' %}
 <style type="text/css">
     header.intro-header{
@@ -90,6 +95,7 @@
 </header>
 {% endif %}
 
+<!-- page类型的样式表(_layout/page类型) -->
 {% if include.type == 'page' %}
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
   <div class="container">

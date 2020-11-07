@@ -1,27 +1,35 @@
 ---
 layout: page
-description: "我想成为一个有创造思想的人，不想只是在执行中度过自己的一生"
+description: "我想成为一个有创造思想的人<br><br>而不只是在执行中度过自己的一生"
 ---
 
 {% for post in paginator.posts %}
+<!-- 显示_post中的.md后缀的文章列表 -->
 <div class="post-preview">
+    <!-- 文件页面链接 -->
     <a href="{{ post.url | prepend: site.baseurl }}">
+        <!-- 标题 -->
         <h2 class="post-title">
             {{ post.title }}
         </h2>
+        <!-- 副标题 -->
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
         </h3>
         {% endif %}
+
+        <!-- 摘要信息，中文300个汉字，英文200个单词 -->
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
+            <!-- strip_html 用于删除所有html标签， truncate 字符长阶段 -->
                 {{ post.content | strip_html | truncate:300 }}
             {% else %}
                 {{ post.content | strip_html | truncate:200 }}
             {% endif %}
         </div>
     </a>
+    <!-- 作者信息 -->
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
@@ -30,6 +38,7 @@ description: "我想成为一个有创造思想的人，不想只是在执行中
 {% endfor %}
 
 <!-- Pager -->
+ <!-- 翻页信息 -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
