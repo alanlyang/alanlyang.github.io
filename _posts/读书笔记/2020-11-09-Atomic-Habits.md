@@ -25,7 +25,7 @@ tags:
 
 > *最近这两个月坚持吃早饭和扫地倒垃圾其实对自己的生活产生了很多潜移默化的影响，尤其是精神状态方面的，这些习惯的作用可能没有那么显性，但是我相信他们一定是有用的，一个很明显的反应是，自己的身体开始排斥碳酸饮料和辣条了*
 4. 习惯是自我提高的复利<br>
-   <img src="/img/notebook/Atomic-habits-1.png" width="200px" height="200px" style="text-aligin:center">
+   <img src="/img/notebook/Atomic-habits-1.png" width="400px" height="400px" style="text-aligin:center">
 > *日常生活中我们却通常并不会例会这些微小的变化，因为我们做了变化，但总是迟迟不见期待中的效果，于是我们失去了改进的动力，退回到之前惯常的做法*
 
 1. 缓慢的转变速度也很容易让坏习惯驻留不去，例如你拖延了时间，把手头要做的事推到明天，稍后总会有时间去完成它。日复一日下去将会造成恶果。
@@ -34,6 +34,6 @@ tags:
 > *回想自己受到重用的日子，大概是因为自己养成了每天记录待办以及每天看邮件的习惯，这两个习惯让自己比同届的人更加了解数据，也更加有条理去解决手头的事情，而反观来到杭州以后，可能是自己肆无忌惮的坏习惯累积造成的结果*
 8. 如果你想预测人生的终点，你只需要描画出由些微损益联成的曲 线，从中看出你的日常选择在未来的十年或二十年里，会有怎样的复合影响。你每月的支出低于你的收入吗？你每周都去健身房吗？你每天都 在看书并学习新事物吗？正是像这样的小拼搏定义着你未来的自我
 9. 习惯可能导致正复利和复复利<br>
-   <img src="/img/notebook/Atomic-habits-2.png" width="200px" height="200px" style="text-aligin: center">
+   <img src="/img/notebook/Atomic-habits-2.png" width="400px" height="400px" style="text-aligin: center">
 
 
