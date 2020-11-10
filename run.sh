@@ -1,7 +1,9 @@
 #!/bin/bash
 today=`date +%Y-%m-%d`
-rm ./sitmap.xml
-cp ./_site/sitmap.xml ./
+
+rm ./sitemap.xml
+cp ./_site/sitemap.xml ./
+
 git add  .
 git commit -m "${today}"
 git push origin main
