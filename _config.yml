@@ -1,11 +1,11 @@
 # Site settings
-title: AlanYang's Blog
-SEOTitle: alanyang|yangliihust
+title: alanlyang's Blog
+SEOTitle: alanlyang|yangliihust
 header-img: img/home-bg.jpg  # 可以用来替换页面的默认图片
-email: alanyang414@gmail.com
+email: alanlyang414@gmail.com
 description: "我想成为一个有创造思想的人\n而不是在执行中度过自己的一生"
-keyword: "alangyang hust yangli alanyang414"
-url: "https://yanglihust.github.io"              # your host, for absolute URL
+keyword: "alangyang hust yangli alanlyang414"
+url: "https://alanlyang.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -15,7 +15,7 @@ future: true
 RSS: false
 weibo_username:     alanyang414
 zhihu_username:     alanyang414
-github_username:    yanglihust
+github_username:    alanyang
 twitter_username:   alanyang414
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -37,7 +37,7 @@ anchorjs: true                          # if you want to customize anchor. check
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
-plugins: 
+Gems: 
   - jekyll-paginate
   - jekyll-sitemap
 
@@ -60,7 +60,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: alanyang414
+disqus_username: alanlyang414
 
 # Netease settings
 netease_comment: false
@@ -80,7 +80,7 @@ ga_domain: auto
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "一念之间，反求诸己"
-sidebar-avatar: /img/avatar-alanyang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-alanlyang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

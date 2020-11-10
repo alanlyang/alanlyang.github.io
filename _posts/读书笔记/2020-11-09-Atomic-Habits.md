@@ -2,7 +2,7 @@
 layout: post
 title: "Atomic Habits" 
 subtitle: "掌控习惯-读书笔记"
-author: alanyang
+author: alanlyang
 date: 2020-11-09 16:30
 header-img: /img/homg-bg.jpg
 tags:
