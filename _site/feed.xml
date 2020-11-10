@@ -6,9 +6,36 @@
 而不是在执行中度过自己的一生</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 10 Nov 2020 10:54:49 +0800</pubDate>
-    <lastBuildDate>Tue, 10 Nov 2020 10:54:49 +0800</lastBuildDate>
+    <pubDate>Tue, 10 Nov 2020 11:17:11 +0800</pubDate>
+    <lastBuildDate>Tue, 10 Nov 2020 11:17:11 +0800</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>github + jekyll 构建个人博客</title>
+        <description>&lt;h3 id=&quot;简单介绍&quot;&gt;简单介绍&lt;/h3&gt;
+
+&lt;h3 id=&quot;repository建立&quot;&gt;repository建立&lt;/h3&gt;
+
+&lt;h3 id=&quot;主题选取&quot;&gt;主题选取&lt;/h3&gt;
+
+&lt;h3 id=&quot;单机调试&quot;&gt;单机调试&lt;/h3&gt;
+
+&lt;h3 id=&quot;站点收录&quot;&gt;站点收录&lt;/h3&gt;
+
+&lt;h3 id=&quot;问题及解决&quot;&gt;问题及解决&lt;/h3&gt;
+</description>
+        <pubDate>Tue, 10 Nov 2020 11:13:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/11/10/%E4%BD%BF%E7%94%A8github+jekyll%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/11/10/%E4%BD%BF%E7%94%A8github+jekyll%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        
+        <category>github</category>
+        
+        <category>blog</category>
+        
+        <category>jekyll</category>
+        
+        
+      </item>
     
       <item>
         <title>Atomic Habits</title>
