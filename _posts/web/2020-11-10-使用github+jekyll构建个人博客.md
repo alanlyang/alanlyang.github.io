@@ -77,8 +77,16 @@ github 是当前最著名的开源网站(当然也是大型程序员相亲网站
     git commit -m "first commit"
     git push -u origin main
 ```
-依次执行上面的代码，即可将框架代码上传到你的repository
-
+依次执行上面的代码，即可将框架代码上传到你的repository<br>
+<img src="/img/in-post/2020-11-13-github建站/6.png" width="400px" height="400px"><br> 
+此时方位 https://username.github.io 就可以看到你的博客了(首次加载可能会比较慢，耐心等一下)
 完成上述操作后，就可以进行博客的创作了
+
+### 博客创作
+#### 框架解析
+此时你已经可以看到自己的网站雏形。但是看到一堆的代码是不是很懵逼，不知道从何开始。别着急，慢慢来。<br>
+> 如果你不想看这部分关于代码的解释，想直接去写文章到你的博客，那么你可以跳过这部分,但是还是建议你看一下，这会对于你以后对代码的改造有很大用处
+
+github博客其实是基于Jekyll+liquid来进行的，简单来讲，就是你在框架指定位置写好markdown文章后，其他人在访问你的网站时，github会调用jekyll
 
 
