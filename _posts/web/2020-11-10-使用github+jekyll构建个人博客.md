@@ -163,10 +163,10 @@ git push origin main
 https://console.dnspod.cn/dns/list   
 
 按照如图配置你的DNS解析服务：<br>
-<img src="/img/in-post/2020-11-13-github建站/9.png" width="400px" height="400px"><br>
+<img src="/img/in-post/2020-11-13-github建站/9.png" width="500px" height="500px"><br>
 
 然后在你github 中custom domain配置你的域名<br>
-<img src="/img/in-post/2020-11-13-github建站/5.png" width="400px" height="400px"><br>
+<img src="/img/in-post/2020-11-13-github建站/5.png" width="500px" height="500px"><br>
  
 ### SEO优化
 最后如果你想自己的博客被搜索引擎检索的话，记得在百度站长和google上进行网站收录
