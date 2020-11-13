@@ -52,9 +52,33 @@ github 是当前最著名的开源网站(当然也是大型程序员相亲网站
 
 到这里就完成了仓库的建立，接下来就是对于博客的美化以及编写博客了
 
-#### 选择主题
+#### 自带主题
 除了分享知识外，我们也希望自己的博客能够更加美观与赏心悦目。github中的博客是基于jekyll来编译与发布的，内部内置了很多的主题，我们可以在setting界面进行选择<br>
 <img src="/img/in-post/2020-11-13-github建站/5.png" width="400px" height="400px"><br> 
+点击choose a theme 就可以选择内置的主题。但是通常来讲内置的主题都会比较丑，好看的主题都需要自己进行定制化，而这有较高的前端代码能力。
 
-点击choose a theme 就可以选择内置的主题。但是通常来讲内置的主题都会比较丑，好看的主题都需要自己进行定制化，而这有较高的前端代码能力。这里
+#### 第三方主题
+这里我们更愿意选择从别人已经写好的模板上进行改造。从而输出更适合我们的主题模板
+
+这里放两个我比较喜欢的：
+1. https://github.com/kitian616/jekyll-TeXt-theme
+2. https://github.com/Huxpro/huxpro.github.io
+
+选定自己喜欢的主题，这里以hux的为例子, 新建一个文件夹，然后
+```shell
+    git clone https://github.com/Huxpro/huxpro.github.io
+```
+删除文件夹下的.git文件夾， 并链接到刚才新建的repository上
+```shell
+    rm -rf ./git
+    git init 
+    git remote add origin 你的repository地址
+    git add .
+    git commit -m "first commit"
+    git push -u origin main
+```
+依次执行上面的代码，即可将框架代码上传到你的repository
+
+完成上述操作后，就可以进行博客的创作了
+
 
