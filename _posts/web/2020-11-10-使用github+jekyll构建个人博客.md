@@ -4,7 +4,7 @@ title: 简单几步搭建个人博客-github+jekyll+goDaddy
 subtitle: 个人blog建站记录
 author: alanlyang
 date: 2020-11-10 11:13
-hidden: true
+hidden: false
 tags: 
     - github
     - blog
