@@ -10,6 +10,7 @@ tags:
     - blog
     - jekyll
 ---
+> 转载请注明原始网站~ 谢谢
 
 ### 前言 
 当我们在浏览网上的知识的时候，很多时候我们也想自己能够成为知识的传播者，也希望别人能够看到我们对这个世界的输出和影响。我们总会在某个时候想，我在这个世界活了这么久，总该留下点痕迹才好。这也是自己开始搭建博客的初衷。如果你<br>
@@ -116,7 +117,7 @@ Jekyll的目录结构如下:<br>
 文章头： 需要用 --- 包裹起来的 yaml 文件格式，用来说明该文章的标题、tag、布局、背景图片等信息，必须使用 --- 包裹。<br>
 形式为  变量名: 值
 如下图；<br>
-<img src="/img/in-post/2020-11-13-github建站/7.png" width="500px" height="400px"><br
+<img src="/img/in-post/2020-11-13-github建站/8.png" width="400px" height="400px"><br>
 
 > 这里还支持很多的变量，也可以自己通过liquid形式来进行定义.   
 > layout表示布局，title为文章名， subtitLe为子标题， tag为文章的标签，支持按标签查找
@@ -159,6 +160,16 @@ git push origin main
 ### 绑定域名
 如果你自己申请了域名，那么可以将博客绑定到自己指定的域名上去。
 国内可以在DNSpod上进行域名申请，很便宜：
+https://console.dnspod.cn/dns/list   
 
+按照如图配置你的DNS解析服务：<br>
+<img src="/img/in-post/2020-11-13-github建站/9.png" width="400px" height="400px"><br>
 
+然后在你github 中custom domain配置你的域名<br>
+<img src="/img/in-post/2020-11-13-github建站/5.png" width="400px" height="400px"><br>
+ 
 ### SEO优化
+最后如果你想自己的博客被搜索引擎检索的话，记得在百度站长和google上进行网站收录
+
+
+**如果有用的话麻烦点个star吧~**

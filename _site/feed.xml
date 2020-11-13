@@ -6,13 +6,17 @@
 而不是在执行中度过自己的一生</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2020 16:32:16 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2020 16:32:16 +0800</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2020 17:00:51 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 17:00:51 +0800</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>简单几步搭建个人博客-github+jekyll+goDaddy</title>
-        <description>&lt;h3 id=&quot;前言&quot;&gt;前言&lt;/h3&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;转载请注明原始网站~ 谢谢&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;前言&quot;&gt;前言&lt;/h3&gt;
 &lt;p&gt;当我们在浏览网上的知识的时候，很多时候我们也想自己能够成为知识的传播者，也希望别人能够看到我们对这个世界的输出和影响。我们总会在某个时候想，我在这个世界活了这么久，总该留下点痕迹才好。这也是自己开始搭建博客的初衷。如果你&lt;br /&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;想要一个分享自己生活与知识的平台&lt;/li&gt;
@@ -102,7 +106,7 @@ readme file 是增加一个对于仓库的说明文件，建议加上&lt;/p&gt;
     git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin main
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;依次执行上面的代码，即可将框架代码上传到你的repository&lt;br /&gt;
-&lt;img src=&quot;/img/in-post/2020-11-13-github建站/6.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt; 
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/6.png&quot; width=&quot;200px&quot; height=&quot;200px&quot; /&gt;&lt;br /&gt; 
 此时方位 https://username.github.io 就可以看到你的博客了(首次加载可能会比较慢，耐心等一下)
 完成上述操作后，就可以进行博客的创作了&lt;/p&gt;
 
@@ -120,7 +124,7 @@ liquid文档: https://liquid.bootcss.com/&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Jekyll的目录结构如下:&lt;br /&gt;
-&lt;img src=&quot;/img/in-post/2020-11-13-github建站/7.png&quot; width=&quot;300px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/7.png&quot; width=&quot;200px&quot; height=&quot;200px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;_includes: 公共的组件，如导航栏等，可以在多个页面中进行引用。（你的每一篇博文都是一个页面，这些页面的公共部分可以抽出来，省去重复工作量）&lt;/li&gt;
@@ -148,7 +152,7 @@ liquid文档: https://liquid.bootcss.com/&lt;/p&gt;
 &lt;p&gt;文章头： 需要用 — 包裹起来的 yaml 文件格式，用来说明该文章的标题、tag、布局、背景图片等信息，必须使用 — 包裹。&lt;br /&gt;
 形式为  变量名: 值
 如下图；&lt;br /&gt;
-&lt;img src=&quot;/img/in-post/2020-11-13-github建站/7.png&quot; width=&quot;500px&quot; height=&quot;400px&quot; /&gt;&amp;lt;br&lt;/p&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/8.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;这里还支持很多的变量，也可以自己通过liquid形式来进行定义. &lt;br /&gt;
@@ -178,8 +182,47 @@ Jekyll完美支持markdown语法， 建议使用markdown语法进行编写即可
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;   jekyll server &lt;span class=&quot;nt&quot;&gt;--safe&lt;/span&gt; 
    &lt;span class=&quot;c&quot;&gt;# 或者 bundler exec jekyll server &lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;打开 http://127.0.0.1:4000/&lt;/p&gt;
+&lt;p&gt;打开 http://127.0.0.1:4000/  &lt;br /&gt;
+就可以实时预览自己的博客了&lt;/p&gt;
 
+&lt;h4 id=&quot;提交代码&quot;&gt;提交代码&lt;/h4&gt;
+&lt;p&gt;预览没问题后，就可以提交自己的代码了。这里附上一个简单的提交脚本&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;today&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y-%m-%d&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ./sitemap.xml
+&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ./_site/sitemap.xml ./
+
+git add  &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;today&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+git push origin main
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;绑定域名&quot;&gt;绑定域名&lt;/h3&gt;
+&lt;p&gt;如果你自己申请了域名，那么可以将博客绑定到自己指定的域名上去。
+国内可以在DNSpod上进行域名申请，很便宜：
+https://console.dnspod.cn/dns/list&lt;/p&gt;
+
+&lt;p&gt;按照如图配置你的DNS解析服务：&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/9.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在你github 中custom domain配置你的域名&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/5.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;seo优化&quot;&gt;SEO优化&lt;/h3&gt;
+&lt;p&gt;最后如果你想自己的博客被搜索引擎检索的话，记得在百度站长和google上进行网站收录&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果有用的话麻烦点个star吧~&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Nov 2020 11:13:00 +0800</pubDate>
         <link>http://localhost:4000/2020/11/10/%E4%BD%BF%E7%94%A8github+jekyll%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
