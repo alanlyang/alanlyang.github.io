@@ -78,7 +78,7 @@ github 是当前最著名的开源网站(当然也是大型程序员相亲网站
     git push -u origin main
 ```
 依次执行上面的代码，即可将框架代码上传到你的repository<br>
-<img src="/img/in-post/2020-11-13-github建站/6.png" width="400px" height="400px"><br> 
+<img src="/img/in-post/2020-11-13-github建站/6.png" width="200px" height="200px"><br> 
 此时方位 https://username.github.io 就可以看到你的博客了(首次加载可能会比较慢，耐心等一下)
 完成上述操作后，就可以进行博客的创作了
 
@@ -88,9 +88,11 @@ github 是当前最著名的开源网站(当然也是大型程序员相亲网站
 > 如果你不想看这部分关于代码的解释，想直接去写文章到你的博客，那么你可以跳过这部分,但是还是建议你看一下，这会对于你以后对代码的改造有很大用处
 
 github博客其实是基于Jekyll+liquid来进行的，简单来讲，就是你在框架指定位置写好markdown文章后，其他人在访问你的网站时，github会调用jekyll来对文章进行解析，并生成对应的html文件，用于网站的展示。<br>
+> Jekyll文档: https://www.jekyll.com.cn/docs/ <br>
+> liquid文档: https://liquid.bootcss.com/ 
 
 Jekyll的目录结构如下:<br>
-<img src="/img/in-post/2020-11-13-github建站/7.png" width="300px" height="400px"><br> 
+<img src="/img/in-post/2020-11-13-github建站/7.png" width="200px" height="200px"><br> 
 
 1. _includes: 公共的组件，如导航栏等，可以在多个页面中进行引用。（你的每一篇博文都是一个页面，这些页面的公共部分可以抽出来，省去重复工作量）
 2. _layout: 布局代码，你的博客可能需要多种布局方式，布局可以在这里定义，然后当你在写博客的时候可以指定使用哪一种页面布局
@@ -107,7 +109,54 @@ Jekyll的目录结构如下:<br>
 了解了每个文件是用来干什么之后，就可以来进行自己的创作了
 
 #### 文章创作
+文章的创作主要在_post文件夹中进行。主要分为两部分
+1. 文章头
+2. 文章内容
+
+文章头： 需要用 --- 包裹起来的 yaml 文件格式，用来说明该文章的标题、tag、布局、背景图片等信息，必须使用 --- 包裹。<br>
+形式为  变量名: 值
+如下图；<br>
+<img src="/img/in-post/2020-11-13-github建站/7.png" width="500px" height="400px"><br
+
+> 这里还支持很多的变量，也可以自己通过liquid形式来进行定义.   
+> layout表示布局，title为文章名， subtitLe为子标题， tag为文章的标签，支持按标签查找
+
+文章体：
+Jekyll完美支持markdown语法， 建议使用markdown语法进行编写即可。你可以直接在Vscode中进行编写，也可以在任何一个markdown编辑器中进行编写完成后，到处为md文件。
+> 外部工具我用的石墨文档编写的，另外也比较喜欢Typora  
+> 如果你使用vscode进行编写的化，可以使用 ``` ctrl + shift + P ``` 输入 markdown ，选择preview来进行实时预览.  
+
+#### 本地调试
+在本机写完文档以后，每次都要提交到仓库有点麻烦，我们可以在本地调试好以后再提交到github仓库。
+首先要进行环境配置, 这里以macos为例：
+```shell
+   brew install gem
+   gem install bundler 
+   gem install Jekyll
+```
+然后执行
+```shell
+   jekyll server --safe 
+   # 或者 bundler exec jekyll server 
+```
+打开 http://127.0.0.1:4000/    
+就可以实时预览自己的博客了
+
+#### 提交代码
+预览没问题后，就可以提交自己的代码了。这里附上一个简单的提交脚本
+```shell
+#!/bin/bash
+today=`date +%Y-%m-%d`
+
+rm ./sitemap.xml
+cp ./_site/sitemap.xml ./
+
+git add  .
+git commit -m "${today}"
+git push origin main
+
+```
+### 绑定域名
 
 
-
-
+### SEO优化

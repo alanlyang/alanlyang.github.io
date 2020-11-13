@@ -6,25 +6,180 @@
 而不是在执行中度过自己的一生</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2020 09:53:18 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2020 09:53:18 +0800</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2020 16:32:16 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 16:32:16 +0800</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>github + jekyll 构建个人博客</title>
-        <description>&lt;h3 id=&quot;简单介绍&quot;&gt;简单介绍&lt;/h3&gt;
+        <title>简单几步搭建个人博客-github+jekyll+goDaddy</title>
+        <description>&lt;h3 id=&quot;前言&quot;&gt;前言&lt;/h3&gt;
+&lt;p&gt;当我们在浏览网上的知识的时候，很多时候我们也想自己能够成为知识的传播者，也希望别人能够看到我们对这个世界的输出和影响。我们总会在某个时候想，我在这个世界活了这么久，总该留下点痕迹才好。这也是自己开始搭建博客的初衷。如果你&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;想要一个分享自己生活与知识的平台&lt;/li&gt;
+  &lt;li&gt;拥有很强的分享欲望但是又没有很多的专业知识&lt;/li&gt;
+  &lt;li&gt;希望对这个世界产生一些影响哪怕是很细微的影响&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;repository建立&quot;&gt;repository建立&lt;/h3&gt;
+&lt;p&gt;那么这篇博客搭建的文章刚刚好，让它作为你影响世界的开端。&lt;/p&gt;
 
-&lt;h3 id=&quot;主题选取&quot;&gt;主题选取&lt;/h3&gt;
+&lt;h3 id=&quot;准备工作&quot;&gt;准备工作&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;github 账号&lt;/li&gt;
+  &lt;li&gt;域名(也可以没有)&lt;/li&gt;
+  &lt;li&gt;markdown语法&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;单机调试&quot;&gt;单机调试&lt;/h3&gt;
+&lt;p&gt;github 是当前最著名的开源网站(当然也是大型程序员相亲网站)。它不仅提供了代码仓库存储、代码分享功能，也提供了知识分享的功能。当然默认的域名是 username.github.io 。 如果你不想使用这个默认的域名的话，可以自己注册一个自己的专属域名(很便宜)，通常首年只需要10块钱以内。国内建议选用DnsPod, 也可以使用goDaddy，这里我使用的是goDaddy。&lt;/p&gt;
 
-&lt;h3 id=&quot;站点收录&quot;&gt;站点收录&lt;/h3&gt;
+&lt;p&gt;好的，现在我们开始搭建个人博客。&lt;/p&gt;
 
-&lt;h3 id=&quot;seo-优化&quot;&gt;SEO 优化&lt;/h3&gt;
+&lt;h3 id=&quot;github-repo-仓库建立&quot;&gt;github repo 仓库建立&lt;/h3&gt;
+&lt;h4 id=&quot;注册账号&quot;&gt;注册账号&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;如果已有账号可跳过该步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;在浏览器中打开 https://github.com&lt;/li&gt;
+  &lt;li&gt;填写相关信息:&lt;br /&gt;
+ 点击注册&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/1.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;
+填写注册信息&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/2.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;这里注意填写的username将之后的默认网址产生影响，因此选一个和自己相关并且具有标识度的名字比较好&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;问题及解决&quot;&gt;问题及解决&lt;/h3&gt;
+&lt;h4 id=&quot;新建repository&quot;&gt;新建repository&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;点击头像左侧的加号,选择new repository &lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/3.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;这里repository可以简单理解为一个仓库用于存放你的文章&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;填写仓库名，这里需要写成 &lt;strong&gt;username.github.io&lt;/strong&gt;的形式，将username换成你的用户名。github 默认会将该地址当做你的博客地址，填写相关信息完成后，点击create repository。然后完成分支创建.
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/4.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;其他的选项选 public 和 Add a Readme File.&lt;br /&gt;
+public 表示你的仓库代码可以公开
+readme file 是增加一个对于仓库的说明文件，建议加上&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;到这里就完成了仓库的建立，接下来就是对于博客的美化以及编写博客了&lt;/p&gt;
+
+&lt;h4 id=&quot;自带主题&quot;&gt;自带主题&lt;/h4&gt;
+&lt;p&gt;除了分享知识外，我们也希望自己的博客能够更加美观与赏心悦目。github中的博客是基于jekyll来编译与发布的，内部内置了很多的主题，我们可以在setting界面进行选择&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/5.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt; 
+点击choose a theme 就可以选择内置的主题。但是通常来讲内置的主题都会比较丑，好看的主题都需要自己进行定制化，而这有较高的前端代码能力。&lt;/p&gt;
+
+&lt;h4 id=&quot;第三方主题&quot;&gt;第三方主题&lt;/h4&gt;
+&lt;p&gt;这里我们更愿意选择从别人已经写好的模板上进行改造。从而输出更适合我们的主题模板&lt;/p&gt;
+
+&lt;p&gt;这里放两个我比较喜欢的：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://github.com/kitian616/jekyll-TeXt-theme&lt;/li&gt;
+  &lt;li&gt;https://github.com/Huxpro/huxpro.github.io&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;选定自己喜欢的主题，这里以hux的为例子, 新建一个文件夹，然后&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    git clone https://github.com/Huxpro/huxpro.github.io
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;删除文件夹下的.git文件夾， 并链接到刚才新建的repository上&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; ./git
+    git init 
+    git remote add origin 你的repository地址
+    git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+    git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;first commit&quot;&lt;/span&gt;
+    git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin main
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;依次执行上面的代码，即可将框架代码上传到你的repository&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/6.png&quot; width=&quot;400px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt; 
+此时方位 https://username.github.io 就可以看到你的博客了(首次加载可能会比较慢，耐心等一下)
+完成上述操作后，就可以进行博客的创作了&lt;/p&gt;
+
+&lt;h3 id=&quot;博客创作&quot;&gt;博客创作&lt;/h3&gt;
+&lt;h4 id=&quot;框架解析&quot;&gt;框架解析&lt;/h4&gt;
+&lt;p&gt;此时你已经可以看到自己的网站雏形。但是看到一堆的代码是不是很懵逼，不知道从何开始。别着急，慢慢来。&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;如果你不想看这部分关于代码的解释，想直接去写文章到你的博客，那么你可以跳过这部分,但是还是建议你看一下，这会对于你以后对代码的改造有很大用处&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;github博客其实是基于Jekyll+liquid来进行的，简单来讲，就是你在框架指定位置写好markdown文章后，其他人在访问你的网站时，github会调用jekyll来对文章进行解析，并生成对应的html文件，用于网站的展示。&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll文档: https://www.jekyll.com.cn/docs/ &lt;br /&gt;
+liquid文档: https://liquid.bootcss.com/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jekyll的目录结构如下:&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/7.png&quot; width=&quot;300px&quot; height=&quot;400px&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;_includes: 公共的组件，如导航栏等，可以在多个页面中进行引用。（你的每一篇博文都是一个页面，这些页面的公共部分可以抽出来，省去重复工作量）&lt;/li&gt;
+  &lt;li&gt;_layout: 布局代码，你的博客可能需要多种布局方式，布局可以在这里定义，然后当你在写博客的时候可以指定使用哪一种页面布局&lt;/li&gt;
+  &lt;li&gt;_post: 这里是我们写文章的地方，注意每个文章都必须命名成2020-11-13-文件名.后缀名的形式，这是Jekyll定义好的解析格式，必须要遵守&lt;/li&gt;
+  &lt;li&gt;_site：是经过Jekyll解析好页面，这个文件夹建议加到.gitignore中&lt;/li&gt;
+  &lt;li&gt;其他文件夹是自建的文件夹，默认情况下 Jekyll解析时会直接复制到_site文件夹中。&lt;/li&gt;
+  &lt;li&gt;index.html：是整个网站的入口&lt;/li&gt;
+  &lt;li&gt;CNAME： 是用来进行绑定域名的&lt;/li&gt;
+  &lt;li&gt;Gemfile: 是gem的配置文件， Jekyll是基于gem来进行的&lt;/li&gt;
+  &lt;li&gt;_config.yml: 这里是所有的配置信息，你可以在这里配置你网站的各种信息，并且可以在html中通个site.变量名来调用这些变量&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;具体的代码注释，在 https://github.com/alanlyang/alanlyang.github.io 我进行了简单的注释，有需要的欢迎查看并star&lt;/p&gt;
+
+&lt;p&gt;了解了每个文件是用来干什么之后，就可以来进行自己的创作了&lt;/p&gt;
+
+&lt;h4 id=&quot;文章创作&quot;&gt;文章创作&lt;/h4&gt;
+&lt;p&gt;文章的创作主要在_post文件夹中进行。主要分为两部分&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;文章头&lt;/li&gt;
+  &lt;li&gt;文章内容&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;文章头： 需要用 — 包裹起来的 yaml 文件格式，用来说明该文章的标题、tag、布局、背景图片等信息，必须使用 — 包裹。&lt;br /&gt;
+形式为  变量名: 值
+如下图；&lt;br /&gt;
+&lt;img src=&quot;/img/in-post/2020-11-13-github建站/7.png&quot; width=&quot;500px&quot; height=&quot;400px&quot; /&gt;&amp;lt;br&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这里还支持很多的变量，也可以自己通过liquid形式来进行定义. &lt;br /&gt;
+layout表示布局，title为文章名， subtitLe为子标题， tag为文章的标签，支持按标签查找&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;文章体：
+Jekyll完美支持markdown语法， 建议使用markdown语法进行编写即可。你可以直接在Vscode中进行编写，也可以在任何一个markdown编辑器中进行编写完成后，到处为md文件。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;外部工具我用的石墨文档编写的，另外也比较喜欢Typora&lt;br /&gt;
+如果你使用vscode进行编写的化，可以使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl + shift + P&lt;/code&gt; 输入 markdown ，选择preview来进行实时预览.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;本地调试&quot;&gt;本地调试&lt;/h4&gt;
+&lt;p&gt;在本机写完文档以后，每次都要提交到仓库有点麻烦，我们可以在本地调试好以后再提交到github仓库。
+首先要进行环境配置, 这里以macos为例：&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;   brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gem
+   gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler 
+   gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;Jekyll
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;然后执行&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;   jekyll server &lt;span class=&quot;nt&quot;&gt;--safe&lt;/span&gt; 
+   &lt;span class=&quot;c&quot;&gt;# 或者 bundler exec jekyll server &lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;打开 http://127.0.0.1:4000/&lt;/p&gt;
+
 </description>
         <pubDate>Tue, 10 Nov 2020 11:13:00 +0800</pubDate>
         <link>http://localhost:4000/2020/11/10/%E4%BD%BF%E7%94%A8github+jekyll%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
