@@ -1,6 +1,6 @@
 # Site settings
 title: alanlyang's Blog
-SEOTitle: alanlyang|yangliihust
+SEOTitle: alanlyang's blog
 header-img: img/home-bg.jpg  # 可以用来替换页面的默认图片
 email: alanlyang414@gmail.com
 description: "我想成为一个有创造思想的人\n而不是在执行中度过自己的一生"
@@ -13,9 +13,9 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     alanyang414
-zhihu_username:     alanyang414
-github_username:    alanyang
+weibo_username:     alanlyang
+zhihu_username:     alanlyang
+github_username:    alanlyang
 twitter_username:   alanyang414
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -60,7 +60,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: alanlyang414
+disqus_username: alanlyang
 
 # Netease settings
 netease_comment: false
