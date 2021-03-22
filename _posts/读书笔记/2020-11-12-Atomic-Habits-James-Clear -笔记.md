@@ -6,9 +6,6 @@ author: alanlyang
 date: 2020-11-09 16:30
 header-img: /img/homg-bg.jpg
 tags:
-    - James Clear
-    - Atomic Habits
-    - 习惯
     - 读书笔记
 ---
 
